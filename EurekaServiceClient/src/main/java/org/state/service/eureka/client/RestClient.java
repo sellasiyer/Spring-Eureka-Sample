@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 @Component
-@RefreshScope
+//@RefreshScope
 public class RestClient {
 
  @Autowired
@@ -24,8 +24,6 @@ public class RestClient {
     public String getServiceResponse(String name) {
     	System.out.println(url + name);
     	 return restTemplate.exchange(url+serviceEndpoint + name, HttpMethod.GET, null, String.class).getBody();
-    
-    	
-    	
+
     }
 }

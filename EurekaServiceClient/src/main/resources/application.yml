@@ -10,3 +10,7 @@ eureka:
 spring:
   application:
     name: Spring-Eureka-Client
+
+logging:
+  level:
+    org.springframework.cloud.config: DEBUG

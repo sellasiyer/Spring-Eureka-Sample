@@ -18,8 +18,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/sellasiyer/Spring-Eureka-Sample/config
+          uri: https://github.com/sellasiyer/Spring-Eureka-Sample
           # The git repo will be cloned to this directory
           basedir: target/config
           # within the cloned git repo search for properties in this directory
-          searchPaths: properties
+          searchPaths: config/properties
