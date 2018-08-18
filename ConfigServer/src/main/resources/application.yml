@@ -22,4 +22,4 @@ spring:
           # The git repo will be cloned to this directory
           basedir: target/config
           # within the cloned git repo search for properties in this directory
-          searchPaths: properties-git
+          searchPaths: properties
