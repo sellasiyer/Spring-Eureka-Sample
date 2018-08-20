@@ -6,7 +6,9 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
-
+logging:
+  level:
+    org.springframework.cloud: 'DEBUG'
 spring:
   application:
     name: Spring-Eureka-Client
