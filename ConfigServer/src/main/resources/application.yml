@@ -1,0 +1,25 @@
+server:
+  port: 8888
+
+management:
+  server:
+    servlet:
+      context-path: /admin
+
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sellasiyer/Spring-Eureka-Sample
+          # The git repo will be cloned to this directory
+          basedir: target/config
+          # within the cloned git repo search for properties in this directory
+          searchPaths: config/properties

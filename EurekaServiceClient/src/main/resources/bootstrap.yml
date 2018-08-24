@@ -1,4 +1,5 @@
 spring:
+
   application:
     name: spring-eureka-client
   profiles:
@@ -7,3 +8,8 @@ spring:
     config:
       uri: http://localhost:8888
       failFast: true
+
+
+logging:
+  level:
+    org.springframework.cloud: 'DEBUG'
